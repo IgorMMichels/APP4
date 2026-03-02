@@ -18,10 +18,7 @@
     </li>
     </ul>
     <input type="text" v-model="novaTarefa">
-    <div>
-
     <button @click="tarefas.push(novaTarefa)">Adicionar</button>
-    </div>
   </div>
 </template>
 
