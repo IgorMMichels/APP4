@@ -23,6 +23,7 @@
     </ul>
     <input type="text" v-model="novaTarefa">
     <button @click="tarefas.push({nome: novaTarefa, status: 'pendente'})">Adicionar</button>
+    
   </div>
 </template>
 
