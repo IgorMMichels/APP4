@@ -5,7 +5,7 @@
   {nome: 'Estudar', status: 'concluida'},
   {nome: 'Dormir', status: 'concluida'},
   {nome: 'Comer', status: 'pendente'},
-  {nome: 'Trabalar', status: 'pendente'},
+  {nome: 'Trabalhar', status: 'pendente'},
   ])
   const novaTarefa = ref('')
 
@@ -23,7 +23,7 @@
     </ul>
     <input type="text" v-model="novaTarefa">
     <button @click="tarefas.push({nome: novaTarefa, status: 'pendente'})">Adicionar</button>
-    
+    <button @click="tarefas.sort((a, b) => b.nome.localeCompare(a.nome))">Ordenar Tarefas</button>
   </div>
 </template>
 
@@ -33,5 +33,11 @@ li {
 }
 .concluida {
   color: lime
+}
+.container {
+  padding: 15px;
+  height: 100%;
+  background-color: #181222;
+  border-radius: 15px;
 }
 </style>
